@@ -1,0 +1,39 @@
+body{
+	padding:70px;
+}
+#jumbotron{
+	text-align:center;
+	top:90%
+}
+#info-circles{
+	text-align:center;
+	clear:both;
+	display:block;
+}
+.circle-wrap{
+	display:inline-block;
+	height:250px;
+	width:250px;
+	margin-right:17px;
+}
+.info-circle{
+	background-image:url(../img/circle.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+	height:250px;
+	width:250px;
+	float:left;
+	position:relative;
+	cursor:pointer;
+}
+.info-circle a{
+	display:block;
+	height:250px;
+	width:250px;
+	float:left;
+
+}
+.circle-icon{
+	margin-top:42px;
+	margin-bottom:10px;
+}
