@@ -6,12 +6,13 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/onepage-scroll.css" rel="stylesheet">
 		<link href="css/ui.css" rel="stylesheet">
 	</head>
-	<body data-spy="scroll" data-target="#banner">
+	<body>
 		<header id="banner">
 			<div class="container">
-				<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="bar">
 					<!-- mobile-->
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
@@ -24,19 +25,19 @@
 					</div>
 					<div class="collapse navbar-collapse" id="mynavbar">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="#"></a></li>
+							<li><a href="#welcome"></a></li>
 							<li><a href="#share">分享</a></li>
-							<li><a href="#rules">服规</a></li>
-							<li><a href="#help">捐助</a></li>
+							<li><a href="#ruler">服规</a></li>
 							<li><a href="#about">关于我们</a></li>
 						</ul>
 					</div>
 					</nav>
-			</div>
-		</header>
+				</div>
+			</header>
+		<div class="main">
+		<div data-spy="scroll" data-target="#bar">
 		<section id="welcome">
-		<div class="row">
-		<div class="col-md-5 col-md-offset-3">
+		<div class="container">
 		<div id="mycarousel" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
@@ -70,56 +71,48 @@
 				<span class="glyphicon glyphicon-chevron-right"></span>
 			</a>
 		</div>
-		</div>
-		</div>
-			<div class="row">
-			<div class="col-md-5 col-md-offset-3">
-			<div class="jumbotron" id="jumbotron">
 				<h2>欢迎来到LoveCraft服务器</h2>
-			</div>
-			</div>
-			</div>
+				<p>IPadress:xxx.xxx.xxx.xxx:xx</p>
+		</div>
 		</section>
 		<section id="share">
 			<div class="container">
-				<div class="row">
-				<div class="col-md-5 col-md-offset-3">
-					<h2>part2</h2>
-				</div>
-				</div>
-				<div class="row" id="info-circles">
+					<h1>Share</h1>
+				<div class="row" id="infocircles">
 					<div class="col-md-4">
-						<div class="circle-wrap">
-							<div class="info-circle">
+						<div class="circlewrap">
+							<div class="infocircle" id="circle1">
 								<a class="smothscroll" href="#" title="skin">
-									<div class="circle-icon">
+									<div class="circleicon">
 									</div>
-									<h3>1</h3>
-									<p>1</p>
+									<h3>下载区</h3>
+								</a>
+							</div>
+						</div>
+						<div class="progress progress-striped active">
+							<div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:45%">
+								<span class="sr-only"></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="circlewrap">
+							<div class="infocircle">
+								<a class="smothscroll" href="#" title="skin">
+									<div class="circleicon">
+									</div>
+									<h3>讨论组</h3>
 								</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="circle-wrap">
-							<div class="info-circle">
+						<div class="circlewrap">
+							<div class="infocircle">
 								<a class="smothscroll" href="#" title="skin">
-									<div class="circle-icon">
+									<div class="circleicon">
 									</div>
-									<h3>1</h3>
-									<p>1</p>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="circle-wrap">
-							<div class="info-circle">
-								<a class="smothscroll" href="#" title="skin">
-									<div class="circle-icon">
-									</div>
-									<h3>1</h3>
-									<p>1</p>
+									<h3>活动区</h3>
 								</a>
 							</div>
 						</div>
@@ -127,11 +120,35 @@
 				</div>
 			</div>
 		</section>
-		<section></section>
-		<section></section>
-		<footer></footer>
+		<section id="ruler">
+			<div class="container">
+			<h1>Ruler</h1>
+			<ol>
+			<li>进服申请信任后请勿破坏他人建筑（尤其是主城建筑），建筑是玩家们的心血，是他们用心建造出来的，而不是一瞬间就造好了的，破坏建筑可耻，我们拒绝熊孩子！发现破坏立刻ban掉</li>
+			<li>在服务器里禁止刷屏，刷屏不仅会扰乱别的玩家的交流，而且会给服务器留下很不好的印象！（尤其是那些刷频要信任的玩家，你认为你刷了那么长的频就会得到信任吗，别做梦了！）发现刷频者立即T出+警告，多次警告无效者直接ban</li>
+			<li>在服务器里不得向OP与建筑师索要任何权限与物品（信任除外），服务器没有任何义务给予你这些权限与物品（服务器活动除外）</li>
+			<li>.......</li>
+			</ol>
+		</div>
+		</section>
+		<section id="about">
+			<div class="container">
+			<h1>About server</h1>
+			<p>LoveCraft以玩家为中心，倡导玩家共同建立一个和谐的大社区。<br/>在游戏中，玩家以城市为单位，作为群居的小型团体，从而共同游戏，交流，沟通。<br/>腐竹在游戏中为玩家提供服务，例如举办每周活动，搬家，为村庄添加传送点等。<br/>Rev-Craft不止是一个服务器，Rev-Craft是由于minecraft而让我们走到一起的大家庭，我们共同分享人生中的趣事，分担他人的苦难，使得我们的友谊在游戏外也得到了持续。</p>
+			<p class="join"><strong>加入QQ群 <img src="img/group.png" alt="qq"></strong></p> 
+			<p class="join"><strong>捐助我们 <img src="img/donation.png" alt="dona"></strong></p>
+		<footer>
+			<em>Power By Bootstrap Codz By BirdEggegg</em>
+		</footer>
+		</div>
+		</section>
+	</div>
+	</div>
 		<script src="js/jquery-2.0.3.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/jquery.onepage-scroll.min.js"></script>
+		<script src="js/circle.js"></script>
+		<script src="js/scroll.js"></script>
 	</body>
 	</html>
 

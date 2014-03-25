@@ -1,22 +1,50 @@
 body{
-	padding:70px;
 }
-#jumbotron{
+a{
+	text-decoration:none;
+}
+section{
+	margin-top:60px;
+}
+#welcome{
 	text-align:center;
-	top:90%
 }
-#info-circles{
+#share{
+	height:530px;
+	text-align:center;
+}
+#ruler{
+	height:530px;
+}
+#ruler h1{
+	text-align:center;
+}
+#about{
+	text-align:center;
+	height:530px;
+}
+section h1{
+	margin-top:100px;
+	margin-bottom:30px;
+}
+#mycarousel{
+	width:500px;
+	height:377px;
+	margin:55px auto;
+}
+#infocircles{
 	text-align:center;
 	clear:both;
 	display:block;
+	margin-top:100px;
 }
-.circle-wrap{
-	display:inline-block;
+.circlewrap{
+	position:relative;
 	height:250px;
 	width:250px;
-	margin-right:17px;
+	margin-left:50px;
 }
-.info-circle{
+.infocircle{
 	background-image:url(../img/circle.png);
 	background-repeat:no-repeat;
 	background-position:0 0;
@@ -25,15 +53,29 @@ body{
 	float:left;
 	position:relative;
 	cursor:pointer;
+	-webkit-transition:all .3s;
 }
-.info-circle a{
+.infocircle a{
 	display:block;
 	height:250px;
 	width:250px;
 	float:left;
 
 }
-.circle-icon{
+.circleicon{
 	margin-top:42px;
 	margin-bottom:10px;
+}
+.infocircle.hover{
+	top:-10px;
+}
+#ruler p{
+	margin-top:50px;
+}
+.join{
+	margin-top:50px;
+}
+footer{
+	position:absolute;
+	bottom:0;
 }
